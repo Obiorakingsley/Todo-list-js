@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="todo-list.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="todo-liist.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <img id="icon" src="moon_icon.png" alt="" width="30">
+
+    <h1><span id="h1-text">TODO APP</span></h1>
+
+    <div class="wrapper-svg">
+      <div class="wrapper-container">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">
+              <span id="sum-completed">0</span> /
+              <span id="sum-array">0</span>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+              <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+              </defs>
+              <circle id="progress-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="container-input">
+      <input id="input" type="text" placeholder="Add todo" autocomplete="off" onkeydown="addTodoKey(event)">
+      <button onclick="addTodo()">+</button>
+    </div>
+    
+    <div id="container-todo">
+    </div>
+  </div>
+</body>
+</html>
