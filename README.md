@@ -2,7 +2,7 @@
 
 A simple yet powerful Todo List application to manage your daily tasks. Built with [Your Tech Stack] and deployed on Vercel.
 
-🔗 **Live Demo**: [https://your-todo-app.vercel.app](https://your-todo-app.vercel.app)
+🔗 **Live Demo**: [https://todo-app.vercel.app](https://todo-list-js-gamma-two.vercel.app/)
 
 ![Todo App Screenshot](./screenshot.png) *(Optional: Add a screenshot)*
 
