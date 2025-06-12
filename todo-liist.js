@@ -1,5 +1,5 @@
-const checkImg = 'check.png';
-const lightIcon = 'sun.png';
+const checkImg = 'images/check.png';
+const lightIcon = 'images/sun.png';
 const darkIcon = document.getElementById('icon');
 
 
@@ -65,7 +65,7 @@ function updateTheme(){
       saveToStorage();
 
     }else{
-      darkIcon.src = "moon_icon.png"; 
+      darkIcon.src = "images/moon_icon.png"; 
       document.body.classList.remove('dark-theme');
     }
 
@@ -85,7 +85,7 @@ function updateTheme(){
     }else{
       localStorage.setItem('theme', 'false');
       isDarkMode = false;
-      darkIcon.src = "moon_icon.png";
+      darkIcon.src = "images/moon_icon.png";
       saveToStorage();
     }
   }
